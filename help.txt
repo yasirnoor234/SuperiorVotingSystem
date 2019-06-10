@@ -1,0 +1,49 @@
+Departments
+- id
+- department_name
+- status
+- created_at
+- updated_at
+
+Poll Designations
+- id
+- poll_designation_name
+- status
+- created_at
+- updated_at
+
+Classes
+- id
+- class_name
+- department_id (foreign_key)
+- status
+- created_at
+- updated_at
+
+Students
+- id
+- Name
+- email
+- email_verified_at
+- password
+- remember_token
+- class_id (foreign_key)
+- status (boolean)
+- created_at
+- updated_at
+
+Candidates
+- id
+- student_id (foreign_key)
+- class_id (foreign_key)
+- status (boolean)
+- created_at
+- updated_at
+
+Polls
+- id
+- candidate_id (foreign_key)
+- student_id (foreign_key)
+- class_id (foreign_key)
+- created_at
+- updated_at
